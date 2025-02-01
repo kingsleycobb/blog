@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Let My People Go Electrical Shop</title>
+  <style>
+    /* Basic Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome To Let My People Go Electrical Shop And Accessories</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="product">
+      <img src="bulb.jpg" alt="Light Bulb">
+      <h3>Light Bulbs</h3>
+      <p>High-quality bulbs for all needs.</p>
+    </div>
+    <div class="product">
+      <img src="fan.jpg" alt="Fan">
+      <h3>Fans & Regulators</h3>
+      <p>Energy-efficient fans with regulators.</p>
+    </div>
+    <div class="product">
+      <img src="cables.jpg" alt="Wiring Cables">
+      <h3>Wiring Cables</h3>
+      <p>Durable and safe wiring solutions.</p>
+    </div>
+    <div class="product">
+      <img src="panel.jpg" alt="Panel Lights">
+      <h3>Panel Lights</h3>
+      <p>Modern lighting for homes and offices.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="padding: 20px; text-align: center;">
+    <h2>Contact Us</h2>
+    <p>Phone: +233 25 737 7760</p>
+    <p>Email: lempgo@gmail.com</p>
+    <p>Address: Ntankoful Market Road, Takoradi, Ghana</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Let My People Go ELectrical Shop. All rights reserved.</p>
+  </footer>
+  <!-- JavaScript for Highlighting Products -->
+  <script>
+    function highlightProduct(product) {
+      // Remove highlight from all products
+      document.querySelectorAll('.product').forEach(p => p.classList.remove('highlight'));
+      // Add highlight to the clicked product
+      product.classList.add('highlight');
+    }
+    </script>
+</body>
+</html>
